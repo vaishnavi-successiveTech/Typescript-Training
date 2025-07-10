@@ -1,9 +1,9 @@
-import Greeting from "@/components/Greeting"
+
 
 const HomePage=()=>{
     return (
         <>
-    <Greeting/>
+    <p> This is home</p>
     </>
     )
 }

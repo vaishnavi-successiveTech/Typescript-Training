@@ -1,16 +1,11 @@
 "use client";
 import { Action, VoteState } from "@/types";
 import { useReducer } from "react";
-
-
-
 const initialState: VoteState = {
   Minecraft: 0,
   SuperMario: 0,
   PubG: 0,
 };
-
-
 const reducer = (state: VoteState, action: Action): VoteState => {
   switch (action.type) {
     case "Minecraft":
@@ -23,11 +18,8 @@ const reducer = (state: VoteState, action: Action): VoteState => {
       return state;
   }
 };
-
-
 const VoteApp = () => {
   const [votes, dispatch] = useReducer(reducer, initialState);
-
   return (
     <>
       <h2 style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>

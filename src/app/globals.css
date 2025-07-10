@@ -1,12 +1,14 @@
- body.light{
-  background:white;
-  color:black
+
+body.light {
+  background: white;
+  color: black;
 }
 
-body.dark{
-  background:black;
-  color:white
+body.dark {
+  background: black;
+  color: white;
 }
+
 .container {
   display: inline-grid;
   grid-template-columns: auto auto auto;
@@ -23,14 +25,14 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-.container > div {
+/* .container > div {
   background-color: #f1f1f1;
   border: 1px solid black;
   padding: 20px;
   height: 100px;
   width: 500px;
   background-color: powderblue;
-}
+} */
 #greetingCss{
   display: flex;
   justify-content:center;
@@ -87,7 +89,6 @@ button {
   max-width: 400px;           
   margin: 10px auto;         
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9; 
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -117,6 +118,4 @@ button {
   font-family: sans-serif;
   
 }
-
-
 

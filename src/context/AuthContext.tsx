@@ -22,7 +22,6 @@ export const AuthContextProvider = ({ children }: ChildrenProp) => {
       setLoggedin(false);
     }
   };
-
   return (
     <MyAuthContext.Provider value={{ loggedIn, login }}>
       {children}

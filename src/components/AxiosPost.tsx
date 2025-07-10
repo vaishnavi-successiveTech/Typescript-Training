@@ -3,7 +3,6 @@ import axios from "axios";
 import { AxiosUser } from "@/types";
 
 const AxiosPost = async () => {
-  // ✅ Perform Axios call on the server
   const response = await axios.get<AxiosUser[]>("https://jsonplaceholder.typicode.com/users");
   const list = response.data;
 

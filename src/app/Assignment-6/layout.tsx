@@ -4,9 +4,8 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Assignment-2",
-  description: "Next.js Assignment-2 Layout",
+  description: "Next.js Assignment-6 Layout",
 };
-
 const Assignment2Layout = ({ children }:ChildrenProp) => {
   return (
     <div
@@ -16,7 +15,7 @@ const Assignment2Layout = ({ children }:ChildrenProp) => {
       }}
     >
       <h2 style={{ marginBottom: "16px", color: "#333" }}>
-        Next.js Assignment-2
+        Next.js Assignment-6
       </h2>
 
       <div

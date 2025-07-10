@@ -1,6 +1,7 @@
 "use client";
 
-import React, { createContext, useState, ReactNode } from "react";
+import { ChildrenProp } from "@/types";
+import React, { createContext, useState } from "react";
 
 
 // define the context type 
@@ -12,12 +13,9 @@ interface ThemeContextType{
 // create the context with an initial value 
 export const ThemeContext=createContext< ThemeContextType | undefined>(undefined); // initial value is compulsory 
 
-interface ThemeContextProviderProps{
-    children: ReactNode;
-}
 
 
-const ThemeContextProvider=({children}:ThemeContextProviderProps)=>{
+const ThemeContextProvider=({children}:ChildrenProp)=>{
     const[theme,setTheme]=useState<string>("light");
 
     const toggleTheme=()=>{

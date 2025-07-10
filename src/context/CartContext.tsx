@@ -4,9 +4,6 @@ import { createContext, useState } from "react";
 import { Product, CartContextType, ChildrenProp } from "@/types";
 
 export const CartContext = createContext<CartContextType | undefined>(undefined);
-
-
-
 const CartProvider = ({ children }: ChildrenProp) => {
   const [cartItems, setCartItems] = useState<Product[]>([]);
 

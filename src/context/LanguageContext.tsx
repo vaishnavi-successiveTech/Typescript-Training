@@ -14,8 +14,6 @@ const LanguageContextProvider = ({children}:ChildrenProp) => {
   return (
    <LanguageContext.Provider value={{lang,switchLanguage}}>
     {children}
-
-
    </LanguageContext.Provider>
   )
 }

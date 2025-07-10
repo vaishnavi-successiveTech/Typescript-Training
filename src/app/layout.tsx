@@ -2,10 +2,10 @@ import "./globals.css";
 
 import LanguageProvider from "@/context/LanguageContext";
 import SidebarWrapper from "@/components/SidebarWrapper";
-import ThemeProvider from "@/context/ThemeContext";
 import { AuthContextProvider } from "@/context/AuthContext";
 import { SwitchTheme } from "@/components";
 import {  ChildrenProp } from "@/types";
+import ThemeContextProvider from "@/context/ThemeContext";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,9 +15,9 @@ export const metadata = {
 const RootLayout = ({ children }: ChildrenProp) => {
   return (
     <html lang="en">
-      <ThemeProvider>
+      <ThemeContextProvider>
         <body style={bodyStyle}>
-          {/* Sidebar */}
+       
           <aside style={sidebarStyle}>
             <h2 style={{ fontSize: "22px", marginBottom: "20px" }}>Assignments</h2>
             <nav style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -25,7 +25,7 @@ const RootLayout = ({ children }: ChildrenProp) => {
             </nav>
           </aside>
 
-          {/* Main content */}
+         
           <main style={mainContentStyle}>
             <AuthContextProvider>
               <LanguageProvider>
@@ -35,7 +35,7 @@ const RootLayout = ({ children }: ChildrenProp) => {
             </AuthContextProvider>
           </main>
         </body>
-      </ThemeProvider>
+      </ThemeContextProvider>
     </html>
   );
 };
@@ -55,14 +55,12 @@ const sidebarStyle: React.CSSProperties = {
   color: "white",
   padding: "20px",
   boxSizing: "border-box",
-  flexShrink: 0, // Prevent sidebar from shrinking
+  flexShrink: 0, 
 };
 
 const mainContentStyle: React.CSSProperties = {
   flex: 1,
   padding: "40px",
-  boxSizing: "border-box",
-  backgroundColor: "#f9fafb",
 };
 
 export default RootLayout;
