@@ -1,13 +1,10 @@
-import CounterWithStep from '@/components/CounterWithStep'
+import RandomGenerator from '@/components/RandomGenerator'
 import React from 'react'
 
-const HomePage = () => {
+const page = () => {
   return (
-    <div>
-        <CounterWithStep/>
-      
-    </div>
+    <RandomGenerator/>
   )
 }
 
-export default HomePage
+export default page

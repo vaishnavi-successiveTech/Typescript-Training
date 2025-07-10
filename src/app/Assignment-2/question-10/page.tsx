@@ -1,11 +1,13 @@
-import Clock from '@/components/Clock';
+
+import LanguageSwitch from '@/components/LanguageSwitch';
+
 import React from 'react'
 
 const HomePage = () => {
 
   return (
     <div>
-        <Clock timeInterface={new Date().toLocaleTimeString()}/>
+     <LanguageSwitch/>
     </div>
   )
 }

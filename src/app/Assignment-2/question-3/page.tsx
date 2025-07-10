@@ -1,11 +1,11 @@
-import RandomGenerator from '@/components/RandomGenerator'
+
+import ToDoList from '@/components/TodoList'
 import React from 'react'
 const HomePage = () => {
   return (
     <div>
-      <RandomGenerator/>
+      <ToDoList/>
     </div>
   )
 }
-
-export default HomePage
+export default HomePage;

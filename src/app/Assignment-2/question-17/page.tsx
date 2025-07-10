@@ -1,13 +1,10 @@
-import Clock from '@/components/Clock';
-import React from 'react'
-
-const HomePage = () => {
-
+import { CopyClipboard } from "@/components";
+const EmployeePage=()=> {
   return (
     <div>
-        <Clock timeInterface={new Date().toLocaleTimeString()}/>
+     <h2>Assignment-2: Question-17</h2>
+     <CopyClipboard/>
     </div>
-  )
+  );
 }
-
-export default HomePage;
+export default EmployeePage;

@@ -1,13 +1,14 @@
-import Clock from '@/components/Clock';
+
+import CounterWithStep from '@/components/CounterWithStep'
 import React from 'react'
 
 const HomePage = () => {
-
   return (
     <div>
-        <Clock timeInterface={new Date().toLocaleTimeString()}/>
+        <CounterWithStep/>
+      
     </div>
   )
 }
 
-export default HomePage;
+export default HomePage

@@ -1,3 +1,4 @@
+import LanguageContextProvider from "@/context/LanguageContext";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
@@ -35,8 +36,11 @@ const RootLayout = ({
             </Link>
           ))}
         </div>
-
+          <LanguageContextProvider>
         {children}
+        
+     </LanguageContextProvider>  
+
       </body>
     </html>
   );

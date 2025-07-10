@@ -1,13 +1,13 @@
-import Clock from '@/components/Clock';
-import React from 'react'
+import {  EmployeeSalary } from "@/components";
 
-const HomePage = () => {
 
+ const EmployeePage=()=> {
   return (
     <div>
-        <Clock timeInterface={new Date().toLocaleTimeString()}/>
+      <h2>Assignment-2: Question-16</h2>
+     <EmployeeSalary/>
+    
     </div>
-  )
+  );
 }
-
-export default HomePage;
+export default EmployeePage;

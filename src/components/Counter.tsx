@@ -1,10 +1,7 @@
 "use client" 
 import React, { useState } from 'react'
 
-//  interface Props {
-//     count:number;
 
-// }
 
 const Counter = () => {
     const[count,setCount]=useState<number>(0);

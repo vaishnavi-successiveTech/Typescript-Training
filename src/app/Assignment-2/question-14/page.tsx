@@ -1,13 +1,11 @@
-import Clock from '@/components/Clock';
-import React from 'react'
+import { ListofTasks } from "@/components";
 
-const HomePage = () => {
-
+ const Home=()=> {
   return (
     <div>
-        <Clock timeInterface={new Date().toLocaleTimeString()}/>
+      <h2>Assignment-2: Question-14</h2>
+      <ListofTasks />
     </div>
-  )
+  );
 }
-
-export default HomePage;
+export default Home;

@@ -10,12 +10,10 @@ type Props={
 }
 
 const Button = ({text,color}:Props) => {
-
   return (
     <div style={{marginTop:"10px"}}>
       <button style={{backgroundColor:color}}> {text}</button>
     </div>
   )
 }
-
 export default Button;

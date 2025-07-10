@@ -1,13 +1,11 @@
-import Clock from '@/components/Clock';
-import React from 'react'
+import { VoteApp } from "@/components";
 
-const HomePage = () => {
-
+const Home=()=> {
   return (
     <div>
-        <Clock timeInterface={new Date().toLocaleTimeString()}/>
+      <h2>Assignment-2: Question-12</h2>
+      <VoteApp />
     </div>
-  )
+  );
 }
-
-export default HomePage;
+export default Home;
