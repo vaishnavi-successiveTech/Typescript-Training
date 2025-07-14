@@ -1,3 +1,4 @@
+"use client"
 import { UserData } from "@/types";
 import React, { useEffect, useState } from "react";
 

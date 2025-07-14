@@ -1,4 +1,5 @@
 // components/HocData.tsx
+"use client"
 import React from "react";
 import withDataFetching from "../hoc/withDataFetching";
 import { UserData } from "@/types";
@@ -18,5 +19,4 @@ const HocData = ({ data = [] }: Props) => {
     </>
   );
 };
-
 export default withDataFetching(HocData);

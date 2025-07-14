@@ -3,13 +3,7 @@ import React from "react";
 import fetchProducts from "../../actions";
 import Pagination from "./Pagination";
 
-interface Params {
-  params: {
-    products: string;
-  };
-}
-
-const Page = async ({ params }: Params) => {
+const Page = async ({ params }: any) => {
   const currentPage = parseInt(params.products, 10);
   const itemsPerPage = 10;
   const skip = (currentPage - 1) * itemsPerPage;
