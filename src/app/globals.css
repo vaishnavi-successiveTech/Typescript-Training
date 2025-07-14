@@ -1,42 +1,121 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+body.light {
+  background: white;
+  color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body.dark {
+  background: black;
+  color: white;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
+  max-width: 500px;
+    padding: 20px;
+  height: 100px;
+  width: 500px;
+}
+button {
+    padding: 7px;
+    border: "black";
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* .container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 20px;
+  height: 100px;
+  width: 500px;
+  background-color: powderblue;
+} */
+#greetingCss{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+  color: black;
+  font-size: 100px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#weatherCss{
+  width:100%;
+  margin:auto;
+  font-size:50px;
+  color:blue;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+.parent-button button{
+  background-color:  #dd7973;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  color: rgb(24, 23, 23);
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.btn-1{
+  padding: 20px;
+  border: 2px solid rgb(96 139 168);
+  border-radius: 5px;
+  background-color: rgb(96 139 168 / 0.2);
+
+}
+.incbtn{
+  border: solid 1px green;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+}
+.button-wrapper{
+  display: flex;
+  width: 500px;
+ padding-top: 50px;
+  margin: auto;
+  gap: 40px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.tasks {
+  list-style-type: disc;     
+  padding-left: 20px;        
+  max-width: 400px;           
+  margin: 10px auto;         
+  font-family: Arial, sans-serif;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.tasks li {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
 }
+
+
+
+.imageStyle {
+  width: 100%;
+  height: auto;
+}
+
+.containerStyle {
+  padding: 16px;
+  text-align: center;
+}
+
+.cardStyle {
+  box-shadow: 0 4px 8px #000000; 
+  width: 300px;
+  border-radius: 5px;
+  margin: 16px auto;
+  font-family: sans-serif;
+  
+}
+
